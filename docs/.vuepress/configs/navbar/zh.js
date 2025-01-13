@@ -59,7 +59,7 @@ export const navbar = [
           },
           {
             text: "组件",
-            link: "component.md"
+            link: "component.md",
           },
           {
             text: "高级使用",
@@ -332,6 +332,19 @@ export const navbar = [
             link: "common.md",
           },
         ],
+      },
+    ],
+  },
+  /**
+   * 开发工具、框架的使用
+   */
+  {
+    text: "工具",
+    prefix: "/zh/tools",
+    children: [
+      {
+        text: "Vuepress",
+        link: "vuepress/usetips.md",
       },
     ],
   },

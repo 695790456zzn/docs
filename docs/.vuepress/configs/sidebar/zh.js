@@ -171,4 +171,11 @@ export const sidebar = {
       children: ["/zh/interview/node/common.md"],
     },
   ],
+  "/zh/tools/": [
+    {
+      text: "Vuepress",
+      collapsible: true,
+      children: ["/zh/tools/vuepress/usetips.md"]
+    }
+  ]
 };
