@@ -5,7 +5,7 @@ import { navbar } from './configs/navbar';
 import { sidebar } from './configs/sidebar';
 
 export default defineUserConfig({
-  base: "/",
+  base: "/study-docs.github.io/",
   lang: "en-US",
   head: [["link", { rel: "icon", href: "/images/logo.png" }]],
 
