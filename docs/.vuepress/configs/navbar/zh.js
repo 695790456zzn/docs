@@ -2,6 +2,9 @@
  * 导航路由
  */
 export const navbar = [
+  /**
+   * js
+   */
   {
     text: "JS",
     prefix: "/zh/js",
@@ -39,6 +42,9 @@ export const navbar = [
       },
     ],
   },
+  /**
+   * Vue
+   */
   {
     text: "Vue",
     prefix: "/zh/vue",
@@ -50,6 +56,10 @@ export const navbar = [
           {
             text: "基本使用",
             link: "base.md",
+          },
+          {
+            text: "组件",
+            link: "component.md"
           },
           {
             text: "高级使用",
@@ -81,6 +91,9 @@ export const navbar = [
       },
     ],
   },
+  /**
+   * React
+   */
   {
     text: "React",
     prefix: "/zh/react",
@@ -143,6 +156,9 @@ export const navbar = [
       },
     ],
   },
+  /**
+   * 工程化
+   */
   {
     text: "工程化",
     prefix: "/zh/engineer",
@@ -181,10 +197,16 @@ export const navbar = [
       },
     ],
   },
+  /**
+   * TS
+   */
   {
     text: "TS",
     link: "/zh/ts/common.md",
   },
+  /**
+   * ES
+   */
   {
     text: "ES",
     prefix: "/zh/es",
@@ -215,6 +237,9 @@ export const navbar = [
       },
     ],
   },
+  /**
+   * node
+   */
   {
     text: "Node",
     prefix: "/zh/node",
@@ -261,6 +286,9 @@ export const navbar = [
       },
     ],
   },
+  /**
+   * 面试题
+   */
   {
     text: "面试题",
     prefix: "/zh/interview",
