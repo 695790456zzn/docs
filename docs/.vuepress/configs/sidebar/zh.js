@@ -131,24 +131,17 @@ export const sidebar = {
   "/zh/node/": [
     {
       text: "Node",
-      collapsible: true,
-      children: ["/zh/node/node/base.md"],
+      children: ["/zh/node/node/base.md", "/zh/node/node/boke.md"],
     },
-    {
-      text: "Express",
-      collapsible: true,
-      children: ["/zh/node/express/base.md"],
-    },
-    {
-      text: "Koa2",
-      collapsible: true,
-      children: ["/zh/node/koa2/base.md"],
-    },
-    {
-      text: "Nest",
-      collapsible: true,
-      children: ["/zh/node/nest/base.md"],
-    },
+    "/zh/node/mysql/base.md",
+    "/zh/node/redis/base.md",
+    "/zh/node/nginx/base.md",
+    "/zh/node/express/base.md",
+    "/zh/node/koa2/base.md",
+    "/zh/node/sequelize/base.md",
+    "/zh/node/mongodb/base.md",
+    "/zh/node/pm2/base.md",
+    "/zh/node/nest/base.md",
   ],
   "/zh/interview/": [
     {
@@ -176,12 +169,12 @@ export const sidebar = {
     {
       text: "Vuepress",
       collapsible: true,
-      children: ["/zh/tools/vuepress/usetips.md"]
+      children: ["/zh/tools/vuepress/usetips.md"],
     },
     {
       text: "NPM",
       collapsible: true,
-      children: ["/zh/tools/npm/use.md"]
-    }
-  ]
+      children: ["/zh/tools/npm/use.md"],
+    },
+  ],
 };

@@ -245,44 +245,45 @@ export const navbar = [
     prefix: "/zh/node",
     children: [
       {
-        text: "Node基础",
+        text: "Node",
         prefix: "node/",
-        children: [
-          {
-            text: "基本使用",
-            link: "base.md",
-          },
-        ],
+        children: ["base.md", "boke.md"],
+      },
+      {
+        text: "Mysql",
+        link: "mysql/base.md",
+      },
+      {
+        text: "Redis",
+        link: "redis/base.md",
+      },
+      {
+        text: "Nginx",
+        link: "nginx/base.md",
       },
       {
         text: "Express",
-        prefix: "express/",
-        children: [
-          {
-            text: "基本使用",
-            link: "base.md",
-          },
-        ],
+        link: "express/base.md",
       },
       {
         text: "Koa2",
-        prefix: "koa2/",
-        children: [
-          {
-            text: "基本使用",
-            link: "base.md",
-          },
-        ],
+        link: "koa2/base.md",
+      },
+      {
+        text: "sequelize",
+        link: "sequelize/base.md",
+      },
+      {
+        text: "mongodb",
+        link: "mongodb/base.md",
+      },
+      {
+        text: "pm2",
+        link: "pm2/base.md",
       },
       {
         text: "nest",
-        prefix: "nest/",
-        children: [
-          {
-            text: "基本使用",
-            link: "base.md",
-          },
-        ],
+        link: "nest/base.md",
       },
     ],
   },
@@ -344,13 +345,11 @@ export const navbar = [
     children: [
       {
         text: "Vuepress",
-        prefix: "vuepress/",
-        children: ["usetips.md"]
+        link: "vuepress/usetips.md",
       },
       {
         text: "NPM",
-        prefix: "npm/",
-        children: ["use.md"]
+        link: "npm/use.md",
       },
     ],
   },
