@@ -344,7 +344,13 @@ export const navbar = [
     children: [
       {
         text: "Vuepress",
-        link: "vuepress/usetips.md",
+        prefix: "vuepress/",
+        children: ["usetips.md"]
+      },
+      {
+        text: "NPM",
+        prefix: "npm/",
+        children: ["use.md"]
       },
     ],
   },

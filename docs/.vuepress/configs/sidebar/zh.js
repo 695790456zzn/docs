@@ -177,6 +177,11 @@ export const sidebar = {
       text: "Vuepress",
       collapsible: true,
       children: ["/zh/tools/vuepress/usetips.md"]
+    },
+    {
+      text: "NPM",
+      collapsible: true,
+      children: ["/zh/tools/npm/use.md"]
     }
   ]
 };
