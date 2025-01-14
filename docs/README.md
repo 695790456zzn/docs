@@ -4,7 +4,7 @@ title: Home
 heroImage: /images/wendang_200.png
 actions:
   - text: 开始
-    link: /getting-started.html
+    link: /zh/js/base/variable.html
     type: primary
 
 features:
@@ -20,4 +20,4 @@ footer: MIT Licensed | Copyright © Madison
 
 查看在线文档 [在线文档][default-theme-home] 了解更多细节。
 
-[default-theme-home]: https://vuejs.press/reference/default-theme/frontmatter.html#home-page
+[default-theme-home]: https://695790456zzn.github.io/docs/
