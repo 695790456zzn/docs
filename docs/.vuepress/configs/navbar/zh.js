@@ -317,12 +317,16 @@ export const navbar = [
     prefix: "/zh/interview",
     children: [
       {
-        text: "JS相关面试题",
+        text: "JS面试题",
         prefix: "js/",
         children: [
           {
-            text: "js common",
+            text: "JS基础面试题",
             link: "common.md",
+          },
+          {
+            text: "JS手撕代码",
+            link: "write.md",
           },
         ],
       },

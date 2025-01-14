@@ -149,7 +149,7 @@ export const sidebar = {
     {
       text: "JS",
       collapsible: true,
-      children: ["/zh/interview/js/common.md"],
+      children: ["/zh/interview/js/common.md", "/zh/interview/js/write.md"],
     },
     {
       text: "Vue",
