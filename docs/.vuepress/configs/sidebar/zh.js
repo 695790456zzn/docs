@@ -1,5 +1,7 @@
 
 export const sidebar = {
+  "/zh/html": ["/zh/html/html.md"],
+  "/zh/css": ["/zh/css/css.md"],
   "/zh/js/": [
     {
       text: "JS基础",
@@ -166,15 +168,16 @@ export const sidebar = {
     },
   ],
   "/zh/tools/": [
-    {
-      text: "Vuepress",
-      collapsible: true,
-      children: ["/zh/tools/vuepress/usetips.md"],
-    },
-    {
-      text: "NPM",
-      collapsible: true,
-      children: ["/zh/tools/npm/use.md"],
-    },
+    "/zh/tools/vuepress/usetips.md",
+    "/zh/tools/npm/use.md",
+    "/zh/tools/git/git.md",
+    "/zh/tools/vscode.md",
   ],
+  "/zh/web3/": [
+    "/zh/web3/block.md",
+    "/zh/web3/uniswap.md",
+    "/zh/web3/defi.md",
+    "/zh/web3/wallet.md",
+  ],
+  "/zh/net/": ["/zh/net/http.md", "/zh/net/websocket.md"],
 };

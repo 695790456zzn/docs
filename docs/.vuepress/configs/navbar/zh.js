@@ -3,6 +3,20 @@
  */
 export const navbar = [
   /**
+   * HTMl
+   */
+  {
+    text: "HTML",
+    link: "/zh/html/html.md",
+  },
+  /**
+   * CSS
+   */
+  {
+    text: "CSS",
+    link: "/zh/css/css.md",
+  },
+  /**
    * js
    */
   {
@@ -155,6 +169,14 @@ export const navbar = [
         ],
       },
     ],
+  },
+  /**
+   * 网络
+   */
+  {
+    text: "网络",
+    prefix: "/zh/net",
+    children: ["http.md", "websocket.md"],
   },
   /**
    * 工程化
@@ -351,6 +373,22 @@ export const navbar = [
         text: "NPM",
         link: "npm/use.md",
       },
+      {
+        text: "Git",
+        link: "git/git.md",
+      },
+      {
+        text: "vscode",
+        link: "vscode.md",
+      },
     ],
+  },
+  /**
+   * web3
+   */
+  {
+    text: "web3",
+    prefix: "/zh/web3",
+    children: ["block.md", "uniswap.md", "defi.md", "wallet.md"],
   },
 ];
