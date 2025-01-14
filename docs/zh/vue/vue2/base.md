@@ -1,4 +1,5 @@
 # Vue2基本使用
+[Vue2文档](https://v2.cn.vuejs.org/)
 ## 指令
 > v-html v-if v-bind v-for
 

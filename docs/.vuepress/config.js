@@ -5,11 +5,9 @@ import { navbar } from './configs/navbar';
 import { sidebar } from './configs/sidebar';
 
 export default defineUserConfig({
-  base: "/study-docs.github.io/",
+  base: "/docs/",
   lang: "en-US",
-  head: [
-    ["link", { rel: "icon", href: "/study-docs.github.io/images/logo.png" }],
-  ],
+  head: [["link", { rel: "icon", href: "/docs/images/logo.png" }]],
 
   title: "学习文档",
   description: "Madison's study document",
