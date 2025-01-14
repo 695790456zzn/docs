@@ -172,16 +172,16 @@ export const navbar = [
             link: "base.md",
           },
           {
-            text: "优化",
-            link: "optimize.md",
-          },
-          {
             text: "Loader",
             link: "loader.md",
           },
           {
             text: "Plugin",
             link: "plugin.md",
+          },
+          {
+            text: "优化",
+            link: "optimize.md",
           },
         ],
       },

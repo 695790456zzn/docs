@@ -96,9 +96,9 @@ export const sidebar = {
       collapsible: true,
       children: [
         "/zh/engineer/webpack/base.md",
-        "/zh/engineer/webpack/optimize.md",
         "/zh/engineer/webpack/loader.md",
         "/zh/engineer/webpack/plugin.md",
+        "/zh/engineer/webpack/optimize.md",
       ],
     },
     {
