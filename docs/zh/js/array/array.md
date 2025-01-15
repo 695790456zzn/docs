@@ -310,11 +310,32 @@ console.log(values.includes(NaN));//true
 - reduceRight()则从数组的最后一项开始，向前遍历到第一项。
 - 4 个参数：前一个值、当前值、项的索引和数组对象
 ```js
+// 基本使用
 var values = [1,2,3,4,5];
 var sum = values.reduceRight(function(prev, cur, index, array){
 return prev + cur;
 },10);   //数组一开始加了一个初始值10,可以不设默认0
 console.log(sum);  //25
+// 应用
+// 1.求和
+const arr = [10, 20, 30, 40, 50]
+const res = arr.reduce((sum, curVal) => sum + curVal, 0)
+// 2.计数
+const arr = [10, 20, 30, 40, 50, 10, 20, 30, 20]
+const n = 20
+const count = arr.reduce((count, val) => {
+    return val === n ? count+1 : count
+}, 0)
+console.log('count', count)
+// 输出字符串
+const arr = [
+    {name: 'zhangsan', age: '20'},
+    {name: 'lisi', age: '21'},
+    {name: 'xiaoming', age: '22'},
+]
+const str = arr.reduce((s, item) => {
+    return `${s}${item.name} - ${item.age}\n`
+}, '')
 ```
 
 ### find 和 findIndex

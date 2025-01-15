@@ -57,7 +57,7 @@ export const navbar = [
       {
         text: "数组",
         prefix: "array/",
-        children: ["array.md"]
+        children: ["array.md"],
       },
     ],
   },
@@ -322,7 +322,7 @@ export const navbar = [
     prefix: "/zh/interview",
     children: [
       {
-        text: "JS面试题",
+        text: "JS",
         prefix: "js/",
         children: [
           {
@@ -333,10 +333,18 @@ export const navbar = [
             text: "JS手撕代码",
             link: "write.md",
           },
+          {
+            text: "算法",
+            link: "algorithm.md",
+          },
+          {
+            text: "LeetCode",
+            link: "LeetCode.md",
+          },
         ],
       },
       {
-        text: "Vue相关面试题",
+        text: "Vue",
         prefix: "vue/",
         children: [
           {
@@ -346,7 +354,7 @@ export const navbar = [
         ],
       },
       {
-        text: "React相关面试题",
+        text: "React",
         prefix: "react/",
         children: [
           {
@@ -356,7 +364,7 @@ export const navbar = [
         ],
       },
       {
-        text: "Node相关面试题",
+        text: "Node",
         prefix: "node/",
         children: [
           {
@@ -364,6 +372,20 @@ export const navbar = [
             link: "common.md",
           },
         ],
+      },
+      {
+        text: "网络",
+        prefix: "net/",
+        children: [
+          {
+            text: "http",
+            link: "net.md",
+          },
+        ],
+      },
+      {
+        text: "常见面试题",
+        link: "common.md",
       },
     ],
   },
@@ -389,6 +411,10 @@ export const navbar = [
       {
         text: "vscode",
         link: "vscode.md",
+      },
+      {
+        text: "正则",
+        link: "test.md",
       },
     ],
   },

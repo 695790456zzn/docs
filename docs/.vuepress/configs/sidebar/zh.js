@@ -43,7 +43,7 @@ export const sidebar = {
     {
       text: "数组",
       children: ["/zh/js/array/array.md"],
-    }
+    },
   ],
   "/zh/vue/": [
     {
@@ -150,10 +150,16 @@ export const sidebar = {
     "/zh/node/nest/base.md",
   ],
   "/zh/interview/": [
+    "/zh/interview/common.md",
     {
       text: "JS",
       collapsible: true,
-      children: ["/zh/interview/js/common.md", "/zh/interview/js/write.md"],
+      children: [
+        "/zh/interview/js/common.md",
+        "/zh/interview/js/write.md",
+        "/zh/interview/js/algorithm.md",
+        "/zh/interview/js/LeetCode.md",
+      ],
     },
     {
       text: "Vue",
@@ -170,12 +176,18 @@ export const sidebar = {
       collapsible: true,
       children: ["/zh/interview/node/common.md"],
     },
+    {
+      text: "Net",
+      collapsible: true,
+      children: ["/zh/interview/net/net.md"],
+    },
   ],
   "/zh/tools/": [
     "/zh/tools/vuepress/usetips.md",
     "/zh/tools/npm/use.md",
     "/zh/tools/git/git.md",
     "/zh/tools/vscode.md",
+    "/zh/tools/test.md",
   ],
   "/zh/web3/": [
     "/zh/web3/block.md",
