@@ -18,6 +18,13 @@ let b = 20
 - 识别所有值类型：undefined string number boolean symbol
 - 判断是否是对象：object（注意，typeof null === 'object'）
 - 识别函数：function
+
 ## 列举强制类型转换和隐式类型转换
 - 强制：parseInt parseFloat toString 等
 - 隐式：if、逻辑运算、==、+拼接字符串
+
+## split() 和 join() 的区别
+```js
+'1-2-3'.split('-') // [1, 2, 3]
+[1, 2, 3].join('-') // '1-2-3'
+```

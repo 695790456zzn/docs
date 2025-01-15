@@ -40,6 +40,10 @@ export const sidebar = {
         "/zh/js/web/storage.md",
       ],
     },
+    {
+      text: "数组",
+      children: ["/zh/js/array/array.md"],
+    }
   ],
   "/zh/vue/": [
     {

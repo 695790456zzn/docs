@@ -54,6 +54,11 @@ export const navbar = [
           },
         ],
       },
+      {
+        text: "数组",
+        prefix: "array/",
+        children: ["array.md"]
+      },
     ],
   },
   /**

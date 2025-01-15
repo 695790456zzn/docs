@@ -51,6 +51,7 @@ SSR服务端渲染：解决SEO和首屏加载速度
 
 使用prerender-spa-plugin：构建时就针对特定的路由生成静态html文件
 
-## 默认情况下，哪些HTML标签是块级元素，哪些标签是内联元素
+## 块级元素、内联元素
+默认情况下，哪些HTML标签是块级元素，哪些标签是内联元素
 - 块级元素，display: block / table：div、h1、h2、table、ul、ol、p；
 - 内联元素，display: inline / inline-block：span、img、input、button；
