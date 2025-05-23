@@ -36,30 +36,47 @@ obj2.address.city = "shanghai";
 console.log(obj1.address.city);
 
 // 深拷贝
-function deepClone(obj = {}) {
-    if (typeof obj !== "object" || obj == null) {
-        // obj 是 null ，或者不是对象和数组，直接返回
-        return obj;                
+function deepClone(value, hash = new WeakMap()) {
+    if (typeof value !== 'object' || value == null) {
+      return value
     }
-    
-    // 初始化返回结果
-    let result
-    if (obj instanceof Array) {
-        result = [];
+    if (hash.has(value)) {
+      return hash.get(value)
+    }
+
+    let clone
+    if (Array.isArray(value)) {
+      clone = []
+    } else if (value instanceof Map) {
+      clone = new Map()
+    } else if (value instanceof Set) {
+      clone = new Set()
     } else {
-        result = {};
+      clone = Object.create(Object.getPropertyOf(value))
     }
-    
-    for (let key in obj) {
-        // 保证 key 不是原型的属性
-        if (obj.hasOwnProperty(key)) {
-            // 递归
-            result[key] = deepClone(obj[key]);                                
-        }    
+    hash.set(value, clone)
+
+    if (Array.isArray(value)) {
+      for(let i = 0; i < value.length; i++) {
+        clone[i] = deepClone(value[i], hash)
+      }
+    } else if (value instanceof Map) {
+      value.forEach((v, k) => {
+        clone.set(deepClone(k, hash), deepClone(v, hash))
+      })
+    } else if (value instanceof Set) {
+      value.forEach(v => {
+        clone.add(deepClone(v, hash))
+      })
+    } else {
+      for(let key in value) {
+        if (value.hasOwnProperty(key)) {
+          clone[key] = deepClone(value[key], hash)
+        }
+      }
     }
-    
-    // 返回结果
-    return result;
+
+    return clone
 }
 ```
 

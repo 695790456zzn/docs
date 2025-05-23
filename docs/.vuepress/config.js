@@ -3,6 +3,7 @@ import { defineUserConfig } from 'vuepress/cli'
 import { viteBundler } from '@vuepress/bundler-vite'
 import { navbar } from './configs/navbar';
 import { sidebar } from './configs/sidebar';
+import { docsearchPlugin } from "@vuepress/plugin-docsearch";
 
 export default defineUserConfig({
   base: "/docs/",
@@ -20,6 +21,24 @@ export default defineUserConfig({
     sidebarDepth: 2,
     sidebar,
   }),
+
+  plugins: [
+    docsearchPlugin({
+      appId: "<APP_ID>",
+      apiKey: "<API_KEY>",
+      indexName: "<INDEX_NAME>",
+      locales: {
+        "/zh/": {
+          placeholder: "搜索文档",
+          translations: {
+            button: {
+              buttonText: "搜索文档",
+            },
+          },
+        },
+      },
+    }),
+  ],
 
   bundler: viteBundler(),
 });
