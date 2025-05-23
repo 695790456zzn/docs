@@ -52,7 +52,6 @@ export const sidebar = {
       children: [
         "/zh/vue/vue2/base.md",
         "/zh/vue/vue2/senior.md",
-        "/zh/vue/vue2/senior.md",
         "/zh/vue/vue2/principle.md",
       ],
     },
