@@ -1,5 +1,7 @@
 
 export const sidebar = {
+  "/zh/html": ["/zh/html/html.md"],
+  "/zh/css": ["/zh/css/css.md"],
   "/zh/js/": [
     {
       text: "JS基础",
@@ -37,6 +39,10 @@ export const sidebar = {
         "/zh/js/web/ajax.md",
         "/zh/js/web/storage.md",
       ],
+    },
+    {
+      text: "数组",
+      children: ["/zh/js/array/array.md"],
     },
   ],
   "/zh/vue/": [
@@ -95,9 +101,9 @@ export const sidebar = {
       collapsible: true,
       children: [
         "/zh/engineer/webpack/base.md",
-        "/zh/engineer/webpack/optimize.md",
         "/zh/engineer/webpack/loader.md",
         "/zh/engineer/webpack/plugin.md",
+        "/zh/engineer/webpack/optimize.md",
       ],
     },
     {
@@ -130,30 +136,29 @@ export const sidebar = {
   "/zh/node/": [
     {
       text: "Node",
-      collapsible: true,
-      children: ["/zh/node/node/base.md"],
+      children: ["/zh/node/node/base.md", "/zh/node/node/boke.md"],
     },
-    {
-      text: "Express",
-      collapsible: true,
-      children: ["/zh/node/express/base.md"],
-    },
-    {
-      text: "Koa2",
-      collapsible: true,
-      children: ["/zh/node/koa2/base.md"],
-    },
-    {
-      text: "Nest",
-      collapsible: true,
-      children: ["/zh/node/nest/base.md"],
-    },
+    "/zh/node/mysql/base.md",
+    "/zh/node/redis/base.md",
+    "/zh/node/nginx/base.md",
+    "/zh/node/express/base.md",
+    "/zh/node/koa2/base.md",
+    "/zh/node/sequelize/base.md",
+    "/zh/node/mongodb/base.md",
+    "/zh/node/pm2/base.md",
+    "/zh/node/nest/base.md",
   ],
   "/zh/interview/": [
+    "/zh/interview/common.md",
     {
       text: "JS",
       collapsible: true,
-      children: ["/zh/interview/js/common.md"],
+      children: [
+        "/zh/interview/js/common.md",
+        "/zh/interview/js/write.md",
+        "/zh/interview/js/algorithm.md",
+        "/zh/interview/js/LeetCode.md",
+      ],
     },
     {
       text: "Vue",
@@ -170,12 +175,24 @@ export const sidebar = {
       collapsible: true,
       children: ["/zh/interview/node/common.md"],
     },
+    {
+      text: "Net",
+      collapsible: true,
+      children: ["/zh/interview/net/net.md"],
+    },
   ],
   "/zh/tools/": [
-    {
-      text: "Vuepress",
-      collapsible: true,
-      children: ["/zh/tools/vuepress/usetips.md"]
-    }
-  ]
+    "/zh/tools/vuepress/usetips.md",
+    "/zh/tools/npm/use.md",
+    "/zh/tools/git/git.md",
+    "/zh/tools/vscode.md",
+    "/zh/tools/test.md",
+  ],
+  "/zh/web3/": [
+    "/zh/web3/block.md",
+    "/zh/web3/uniswap.md",
+    "/zh/web3/defi.md",
+    "/zh/web3/wallet.md",
+  ],
+  "/zh/net/": ["/zh/net/http.md", "/zh/net/websocket.md"],
 };

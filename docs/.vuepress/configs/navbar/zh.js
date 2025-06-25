@@ -3,6 +3,20 @@
  */
 export const navbar = [
   /**
+   * HTMl
+   */
+  {
+    text: "HTML",
+    link: "/zh/html/html.md",
+  },
+  /**
+   * CSS
+   */
+  {
+    text: "CSS",
+    link: "/zh/css/css.md",
+  },
+  /**
    * js
    */
   {
@@ -39,6 +53,11 @@ export const navbar = [
             link: "storage.md",
           },
         ],
+      },
+      {
+        text: "数组",
+        prefix: "array/",
+        children: ["array.md"],
       },
     ],
   },
@@ -157,6 +176,14 @@ export const navbar = [
     ],
   },
   /**
+   * 网络
+   */
+  {
+    text: "网络",
+    prefix: "/zh/net",
+    children: ["http.md", "websocket.md"],
+  },
+  /**
    * 工程化
    */
   {
@@ -172,16 +199,16 @@ export const navbar = [
             link: "base.md",
           },
           {
-            text: "优化",
-            link: "optimize.md",
-          },
-          {
             text: "Loader",
             link: "loader.md",
           },
           {
             text: "Plugin",
             link: "plugin.md",
+          },
+          {
+            text: "优化",
+            link: "optimize.md",
           },
         ],
       },
@@ -245,44 +272,45 @@ export const navbar = [
     prefix: "/zh/node",
     children: [
       {
-        text: "Node基础",
+        text: "Node",
         prefix: "node/",
-        children: [
-          {
-            text: "基本使用",
-            link: "base.md",
-          },
-        ],
+        children: ["base.md", "boke.md"],
+      },
+      {
+        text: "Mysql",
+        link: "mysql/base.md",
+      },
+      {
+        text: "Redis",
+        link: "redis/base.md",
+      },
+      {
+        text: "Nginx",
+        link: "nginx/base.md",
       },
       {
         text: "Express",
-        prefix: "express/",
-        children: [
-          {
-            text: "基本使用",
-            link: "base.md",
-          },
-        ],
+        link: "express/base.md",
       },
       {
         text: "Koa2",
-        prefix: "koa2/",
-        children: [
-          {
-            text: "基本使用",
-            link: "base.md",
-          },
-        ],
+        link: "koa2/base.md",
+      },
+      {
+        text: "sequelize",
+        link: "sequelize/base.md",
+      },
+      {
+        text: "mongodb",
+        link: "mongodb/base.md",
+      },
+      {
+        text: "pm2",
+        link: "pm2/base.md",
       },
       {
         text: "nest",
-        prefix: "nest/",
-        children: [
-          {
-            text: "基本使用",
-            link: "base.md",
-          },
-        ],
+        link: "nest/base.md",
       },
     ],
   },
@@ -294,17 +322,29 @@ export const navbar = [
     prefix: "/zh/interview",
     children: [
       {
-        text: "JS相关面试题",
+        text: "JS",
         prefix: "js/",
         children: [
           {
-            text: "js common",
+            text: "JS基础面试题",
             link: "common.md",
+          },
+          {
+            text: "JS手撕代码",
+            link: "write.md",
+          },
+          {
+            text: "算法",
+            link: "algorithm.md",
+          },
+          {
+            text: "LeetCode",
+            link: "LeetCode.md",
           },
         ],
       },
       {
-        text: "Vue相关面试题",
+        text: "Vue",
         prefix: "vue/",
         children: [
           {
@@ -314,7 +354,7 @@ export const navbar = [
         ],
       },
       {
-        text: "React相关面试题",
+        text: "React",
         prefix: "react/",
         children: [
           {
@@ -324,7 +364,7 @@ export const navbar = [
         ],
       },
       {
-        text: "Node相关面试题",
+        text: "Node",
         prefix: "node/",
         children: [
           {
@@ -332,6 +372,20 @@ export const navbar = [
             link: "common.md",
           },
         ],
+      },
+      {
+        text: "网络",
+        prefix: "net/",
+        children: [
+          {
+            text: "http",
+            link: "net.md",
+          },
+        ],
+      },
+      {
+        text: "常见面试题",
+        link: "common.md",
       },
     ],
   },
@@ -346,6 +400,30 @@ export const navbar = [
         text: "Vuepress",
         link: "vuepress/usetips.md",
       },
+      {
+        text: "NPM",
+        link: "npm/use.md",
+      },
+      {
+        text: "Git",
+        link: "git/git.md",
+      },
+      {
+        text: "vscode",
+        link: "vscode.md",
+      },
+      {
+        text: "正则",
+        link: "test.md",
+      },
     ],
+  },
+  /**
+   * web3
+   */
+  {
+    text: "web3",
+    prefix: "/zh/web3",
+    children: ["block.md", "uniswap.md", "defi.md", "wallet.md"],
   },
 ];
